@@ -7,7 +7,7 @@ const error = document.querySelector('#error');
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    if (title.value == '' && author.value == '' && isbn.value == '') {
+    if (title.value == '' || author.value == '' || isbn.value == '') {
         error.style["display"] = "block";
     } else {
         error.style["display"] = "none";
