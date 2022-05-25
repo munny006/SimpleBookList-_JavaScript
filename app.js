@@ -3,12 +3,14 @@ const author = document.querySelector('#author');
 const isbn = document.querySelector('#isbn');
 const btn = document.querySelector('.btn');
 const bookList = document.querySelector('#book-list');
+const error = document.querySelector('#error');
 
-btn.addEventListener('click', function(e) {
+btn.addEventListener('click', (e) => {
     e.preventDefault();
     if (title.value == '' && author.value == '' && isbn.value == '') {
-        alert('Enter Your Data');
+        error.style["display"] = "block";
     } else {
+        error.style["display"] = "none";
         const newRow = document.createElement('tr');
 
 
