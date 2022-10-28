@@ -29,5 +29,9 @@ btn.addEventListener("click", function (e) {
     newRow.appendChild(newIsbn);
 
     bookList.appendChild(newRow);
+    title.value ="";
+    author.value= "";
+    isbn.value= "";
+    
   }
 });
